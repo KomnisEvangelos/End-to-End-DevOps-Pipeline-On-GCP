@@ -2,3 +2,5 @@ src/.env
 venv/
 src/*.json
 terraform/*.json
+devops.json
+.gitignore
