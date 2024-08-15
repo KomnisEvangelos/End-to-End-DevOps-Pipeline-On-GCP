@@ -34,7 +34,7 @@ jobs:
         echo "GCP_TABLE_NAME=${{ secrets.GCP_TABLE_NAME }}" >> $GITHUB_ENV
 
     - name: Add src to PYTHONPATH
-      run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)/src" >> $GITHUB_ENV
+      run: echo "PYTHONPATH=$PYTHONPATH:${pwd}/src" >> $GITHUB_ENV
 
     - name: Run tests
       run: pytest tests/
